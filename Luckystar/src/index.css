@@ -1,3 +1,10 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Now your custom styles can go below */
+.icon-circle {
+	@apply w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center;
+}

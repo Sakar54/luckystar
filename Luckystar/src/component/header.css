@@ -1,0 +1,61 @@
+/* Header.css */
+
+.main-header {
+	position: relative;
+	z-index: 100;
+	background: transparent;
+	transition: all 0.3s ease;
+}
+
+.header-style-four {
+	padding: 20px 0;
+}
+
+.fixed-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+	z-index: 9999;
+}
+
+.logo-box img {
+	max-height: 65px;
+	transition: all 0.3s ease;
+}
+
+.menu-area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-right-content {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.menu-right-content .search-box-outer,
+.menu-right-content li {
+	cursor: pointer;
+}
+
+.icon-8,
+.icon-31 {
+	font-size: 18px;
+	color: #002244;
+}
+
+.icon-circle {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease;
+}

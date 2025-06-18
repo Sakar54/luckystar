@@ -1,0 +1,61 @@
+.visa-card-wrapper {
+	perspective: 1500px;
+}
+
+.visa-card {
+	position: relative;
+	width: 100%;
+	height: 320px;
+	transform-style: preserve-3d;
+	transition: transform 0.9s ease;
+}
+
+.visa-card-wrapper:hover .visa-card {
+	transform: rotateY(200deg);
+}
+
+/* Keep card flipped after hover */
+.visa-card-wrapper.flipped .visa-card {
+	transform: rotateY(180deg);
+}
+
+/* Shared styles */
+.card-front,
+.card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 0.75rem;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.card-front {
+	background-color: #e5e7eb;
+	align-items: center;
+	text-align: center;
+}
+
+.card-back {
+	transform: rotateY(180deg);
+	background-color: #ffffff;
+	align-items: flex-start;
+}
+
+.map-icon {
+	width: 96px;
+	height: 96px;
+	object-fit: contain;
+	margin-bottom: 1rem;
+}
+
+.country-name {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #111827;
+}
